@@ -1,0 +1,244 @@
+======================================================================
+SQL/03_FUNNEL_ANALYSIS.SQL
+======================================================================
+
+Q1. How many sessions reach each stage, and what share of all visits is that?
+stage | sessions_at_stage | pct_of_all_visits
+session_start | 14000 | 100.0
+product_view | 10142 | 72.4
+add_to_cart | 7367 | 52.6
+checkout_start | 5239 | 37.4
+order_placed | 4395 | 31.4
+
+Q2. Drop-off between two neighbouring stages (cart -> checkout example).
+cart_sessions | checkout_sessions | cart_to_checkout_pct
+7367 | 5239 | 71.1
+
+Q3. Funnel by marketing channel. Which traffic actually buys?
+channel | visits | orders | visit_to_order_pct
+direct | 2202 | 1122 | 51.0
+email | 1735 | 827 | 47.7
+organic | 3953 | 1477 | 37.4
+paid_ads | 3570 | 608 | 17.0
+social | 2540 | 361 | 14.2
+
+Q4. Funnel by device.
+device | visits | orders | visit_to_order_pct
+mobile_app | 7651 | 2935 | 38.4
+desktop | 2549 | 743 | 29.1
+mobile_web | 3800 | 717 | 18.9
+
+Q5. Funnel by customer type.
+customer_segment | visits | orders | visit_to_order_pct
+loyal | 3690 | 1788 | 48.5
+returning | 6641 | 1972 | 29.7
+new | 3669 | 635 | 17.3
+
+Q6. Month by month orders and money.
+month | orders | gross_value | delivered_value
+2025-01 | 751 | 479646.0 | 436591.0
+2025-02 | 702 | 446166.0 | 410555.0
+2025-03 | 767 | 511829.0 | 460921.0
+2025-04 | 717 | 481393.0 | 438498.0
+2025-05 | 742 | 448441.0 | 400481.0
+2025-06 | 716 | 494478.0 | 442118.0
+======================================================================
+SQL/04_CANCELLATION_ANALYSIS.SQL
+======================================================================
+
+Q1. Overall cancel rate and money lost.
+total_orders | cancelled_orders | cancel_rate_pct | value_lost
+4395 | 549 | 12.5 | 272789.0
+
+Q2. Why do orders get cancelled?
+cancel_reason | cancelled_orders | pct_of_cancels | value_lost
+substitute_rejected | 133 | 24.2 | 61797.0
+items_unavailable | 130 | 23.7 | 20133.0
+changed_mind | 93 | 16.9 | 74032.0
+late_delivery | 76 | 13.8 | 45018.0
+payment_failed | 59 | 10.7 | 32547.0
+address_issue | 58 | 10.6 | 39262.0
+
+Q3. Who pulls the plug: customer, seller or system?
+cancelled_by | cancelled_orders | avg_order_value
+customer | 302 | 599.0
+system | 144 | 226.0
+seller | 103 | 577.0
+
+Q4. Cancel rate by city.
+city | orders | cancelled | cancel_rate_pct
+Mumbai | 781 | 107 | 13.7
+Delhi | 631 | 81 | 12.8
+Chennai | 321 | 40 | 12.5
+Bengaluru | 1155 | 142 | 12.3
+Hyderabad | 1093 | 132 | 12.1
+Pune | 414 | 47 | 11.4
+
+Q5. Cancel rate by channel and customer type together.
+channel | customer_segment | orders | cancel_rate_pct
+paid_ads | new | 84 | 28.6
+social | loyal | 179 | 17.3
+paid_ads | returning | 244 | 16.4
+social | new | 45 | 15.6
+paid_ads | loyal | 280 | 15.0
+organic | loyal | 614 | 14.3
+direct | new | 194 | 12.4
+email | returning | 403 | 12.2
+direct | returning | 522 | 11.9
+email | new | 115 | 11.3
+organic | new | 197 | 11.2
+email | loyal | 309 | 11.0
+social | returning | 137 | 10.9
+organic | returning | 666 | 9.8
+direct | loyal | 406 | 8.1
+
+Q6. Does a bigger basket cancel more often?
+value_band | orders | cancel_rate_pct
+A. under 500 | 2245 | 15.5
+B. 500-999 | 1239 | 9.6
+C. 1000-1999 | 743 | 9.0
+D. 2000 and above | 168 | 8.3
+======================================================================
+SQL/05_SUBSTITUTION_ANALYSIS.SQL
+======================================================================
+
+Q1. How many swaps were offered and how many were accepted?
+substitutions_offered | accepted | acceptance_rate_pct
+690 | 408 | 59.1
+
+Q2. THE KEY QUERY.
+swap_group | orders | cancelled | cancel_rate_pct
+A. no swap offered | 3735 | 352 | 9.4
+B. swap rejected | 277 | 167 | 60.3
+C. swap accepted | 383 | 30 | 7.8
+
+Q3. Does the price of the swap decide if the customer says yes?
+price_gap_band | swaps_offered | acceptance_rate_pct
+A. cheaper or same price | 342 | 71.1
+B. up to 50 costlier | 95 | 63.2
+C. more than 50 costlier | 253 | 41.5
+
+Q4. Which categories run out of stock the most?
+category | items_ordered | stock_problem_items | stock_problem_pct
+Fruits & Vegetables | 1517 | 365 | 24.1
+Dairy & Eggs | 739 | 146 | 19.8
+Bakery | 659 | 125 | 19.0
+Packaged Staples | 1656 | 124 | 7.5
+Household | 920 | 65 | 7.1
+Snacks | 964 | 57 | 5.9
+Beverages | 962 | 52 | 5.4
+Personal Care | 745 | 29 | 3.9
+
+Q5. Top products that force a swap the most (fix these first).
+product_name | category | times_swap_offered | accepted | acceptance_rate_pct
+Gold Papaya | Fruits & Vegetables | 51 | 38 | 74.5
+Everyday Capsicum | Fruits & Vegetables | 27 | 23 | 85.2
+Prime Curd | Dairy & Eggs | 23 | 15 | 65.2
+Classic White Bread | Bakery | 21 | 11 | 52.4
+Fresh Paneer | Dairy & Eggs | 21 | 17 | 81.0
+Royal Poha 500g | Packaged Staples | 21 | 12 | 57.1
+Value Kitchen Towel | Household | 21 | 8 | 38.1
+Royal Sunflower Oil 1L | Packaged Staples | 18 | 10 | 55.6
+Select Atta 5kg | Packaged Staples | 18 | 9 | 50.0
+Value Croissant | Bakery | 17 | 11 | 64.7
+
+Q6. Best replacement items (the ones customers accept most often).
+substitute_offered | times_used | acceptance_rate_pct
+Pure Papaya | 8 | 100.0
+Natural Cucumber | 6 | 100.0
+Green Pizza Base | 12 | 91.7
+Classic Toned Milk | 11 | 90.9
+Choice Onions | 9 | 88.9
+Prime Salt 1kg | 7 | 85.7
+Green Ghee | 7 | 85.7
+Daily Cheese Slices | 6 | 83.3
+Prime Apples | 11 | 81.8
+Royal Sunflower Oil 1L | 5 | 80.0
+
+Q7. Items that could not be swapped at all (no alternative allowed).
+category | items_removed_from_cart
+Fruits & Vegetables | 158
+Household | 33
+Dairy & Eggs | 26
+Bakery | 19
+Snacks | 13
+Packaged Staples | 13
+Beverages | 9
+Personal Care | 2
+======================================================================
+SQL/06_PRODUCT_ANALYSIS.SQL
+======================================================================
+
+Q1. Product level funnel: views, carts, and view-to-cart rate.
+product_name | category | views | carts | view_to_cart_pct
+Farm Grapes | Fruits & Vegetables | 1596 | 567 | 35.5
+Gold Besan 500g | Packaged Staples | 1392 | 496 | 35.6
+Select Atta 5kg | Packaged Staples | 1162 | 416 | 35.8
+Royal Poha 500g | Packaged Staples | 972 | 323 | 33.2
+Value Kitchen Towel | Household | 946 | 336 | 35.5
+Farm Atta 5kg | Packaged Staples | 811 | 270 | 33.3
+Royal Sunflower Oil 1L | Packaged Staples | 759 | 262 | 34.5
+Classic Mineral Water | Beverages | 692 | 276 | 39.9
+Everyday Onions | Fruits & Vegetables | 668 | 254 | 38.0
+Gold Papaya | Fruits & Vegetables | 655 | 247 | 37.7
+Value Salt 1kg | Packaged Staples | 634 | 218 | 34.4
+Green Dry Fruit Pack | Snacks | 526 | 209 | 39.7
+Classic Detergent Powder | Household | 516 | 206 | 39.9
+Choice Apples | Fruits & Vegetables | 464 | 155 | 33.4
+Natural Namkeen Mix | Snacks | 449 | 184 | 41.0
+
+Q2. High traffic but weak conversion: the fix-me list.
+product_name | category | views | view_to_cart_pct
+Gold Lemons | Fruits & Vegetables | 203 | 29.1
+Daily Bath Soap | Personal Care | 259 | 30.1
+Daily Cheese Slices | Dairy & Eggs | 220 | 32.3
+Prime Butter | Dairy & Eggs | 279 | 32.6
+Royal Poha 500g | Packaged Staples | 972 | 33.2
+Royal Razor Pack | Personal Care | 292 | 33.2
+Farm Atta 5kg | Packaged Staples | 811 | 33.3
+Choice Apples | Fruits & Vegetables | 464 | 33.4
+Fresh Paneer | Dairy & Eggs | 245 | 33.5
+Green Cake Slice | Bakery | 271 | 33.9
+
+Q3. Category funnel.
+category | views | carts | view_to_cart_pct
+Packaged Staples | 7589 | 2650 | 34.9
+Fruits & Vegetables | 6710 | 2416 | 36.0
+Household | 4030 | 1486 | 36.9
+Snacks | 3841 | 1544 | 40.2
+Beverages | 3752 | 1531 | 40.8
+Dairy & Eggs | 3533 | 1217 | 34.4
+Personal Care | 3452 | 1231 | 35.7
+Bakery | 2874 | 1059 | 36.8
+
+Q4. How much of all traffic do the top 10 products take?
+top10_share_of_views
+27.0
+
+Q5. Cancel rate of orders that contain each category.
+category | orders_with_category | cancel_rate_pct
+Dairy & Eggs | 687 | 14.7
+Fruits & Vegetables | 1348 | 14.3
+Bakery | 628 | 14.0
+Household | 845 | 13.6
+Snacks | 879 | 12.6
+Packaged Staples | 1445 | 11.6
+Beverages | 888 | 10.4
+Personal Care | 688 | 8.4
+
+Q6. Revenue that actually got delivered, by category.
+category | billed_value | delivered_value | delivered_pct
+Packaged Staples | 924177.0 | 831203.0 | 89.9
+Personal Care | 465249.0 | 434357.0 | 93.4
+Household | 363829.0 | 318138.0 | 87.4
+Beverages | 334198.0 | 304042.0 | 91.0
+Fruits & Vegetables | 268696.0 | 245451.0 | 91.3
+Snacks | 264672.0 | 239684.0 | 90.6
+Dairy & Eggs | 165057.0 | 148427.0 | 89.9
+Bakery | 76075.0 | 67862.0 | 89.2
+
+Q7. Stock reliability vs cancellation: the link in one table.
+stock_band | orders | cancel_rate_pct
+A. reliable (92%+) | 2736 | 10.3
+B. average (82-91%) | 1853 | 13.8
+C. weak (under 82%) | 1853 | 14.5
