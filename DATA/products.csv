@@ -1,0 +1,147 @@
+product_id,product_name,category,unit_price,is_substitutable,in_stock_rate
+1015,Farm Grapes,Fruits & Vegetables,115.0,0,0.75
+1141,Gold Besan 500g,Packaged Staples,664.0,1,0.96
+1132,Select Atta 5kg,Packaged Staples,296.0,1,0.94
+1143,Royal Poha 500g,Packaged Staples,259.0,1,0.9
+1128,Value Kitchen Towel,Household,207.0,1,0.88
+1131,Farm Atta 5kg,Packaged Staples,143.0,1,0.93
+1136,Royal Sunflower Oil 1L,Packaged Staples,393.0,1,0.87
+1070,Classic Mineral Water,Beverages,303.0,1,0.97
+1005,Everyday Onions,Fruits & Vegetables,155.0,0,0.75
+1024,Gold Papaya,Fruits & Vegetables,236.0,1,0.73
+1140,Value Salt 1kg,Packaged Staples,240.0,1,0.96
+1117,Classic Detergent Powder,Household,61.0,0,0.94
+1091,Green Dry Fruit Pack,Snacks,311.0,1,0.99
+1072,Green Energy Drink,Beverages,76.0,1,0.93
+1007,Choice Apples,Fruits & Vegetables,108.0,1,0.81
+1080,Natural Namkeen Mix,Snacks,187.0,1,0.99
+1050,Value Croissant,Bakery,125.0,1,0.79
+1046,Classic White Bread,Bakery,31.0,1,0.78
+1071,Super Energy Drink,Beverages,423.0,1,0.99
+1086,Gold Popcorn,Snacks,62.0,1,0.89
+1019,Everyday Capsicum,Fruits & Vegetables,224.0,1,0.75
+1115,Select Floor Cleaner,Household,460.0,0,0.89
+1028,Natural Curd,Dairy & Eggs,311.0,0,0.91
+1038,Green Ghee,Dairy & Eggs,50.0,1,0.84
+1114,Everyday Dish Wash Gel,Household,156.0,1,0.96
+1041,Natural Fresh Cream,Dairy & Eggs,309.0,1,0.88
+1142,Natural Besan 500g,Packaged Staples,147.0,1,0.86
+1111,Select Razor Pack,Personal Care,60.0,1,0.95
+1003,Daily Tomatoes,Fruits & Vegetables,127.0,1,0.77
+1061,Green Cola 750ml,Beverages,310.0,1,0.9
+1112,Royal Razor Pack,Personal Care,610.0,1,0.99
+1029,Fresh Paneer,Dairy & Eggs,238.0,1,0.77
+1093,Royal Instant Noodles,Snacks,288.0,1,0.94
+1031,Prime Butter,Dairy & Eggs,159.0,1,0.9
+1082,Royal Choco Cookies,Snacks,130.0,1,0.88
+1101,Fresh Bath Soap,Personal Care,561.0,1,0.91
+1053,Green Cake Slice,Bakery,37.0,1,0.8
+1027,Prime Curd,Dairy & Eggs,44.0,1,0.68
+1103,Super Hand Wash,Personal Care,220.0,1,0.99
+1097,Classic Face Wash,Personal Care,336.0,1,0.99
+1013,Classic Carrots,Fruits & Vegetables,97.0,1,0.77
+1034,Daily Cheese Slices,Dairy & Eggs,70.0,0,0.87
+1001,Everyday Bananas,Fruits & Vegetables,36.0,0,0.73
+1127,Select Kitchen Towel,Household,633.0,1,0.94
+1113,Value Dish Wash Gel,Household,185.0,0,0.83
+1096,Super Shampoo 340ml,Personal Care,251.0,1,0.97
+1102,Daily Bath Soap,Personal Care,887.0,1,0.99
+1144,Value Poha 500g,Packaged Staples,438.0,0,0.94
+1108,Daily Deodorant,Personal Care,398.0,1,0.99
+1017,Gold Lemons,Fruits & Vegetables,198.0,0,0.77
+1078,Everyday Potato Chips,Snacks,265.0,1,0.92
+1084,Gold Salted Peanuts,Snacks,45.0,0,0.93
+1057,Daily Pizza Base,Bakery,156.0,1,0.81
+1068,Classic Mango Drink,Beverages,270.0,1,0.94
+1125,Natural Mosquito Repellent,Household,667.0,1,0.99
+1094,Choice Instant Noodles,Snacks,308.0,0,0.99
+1104,Natural Hand Wash,Personal Care,737.0,1,0.97
+1116,Everyday Floor Cleaner,Household,486.0,1,0.99
+1022,Natural Cucumber,Fruits & Vegetables,240.0,1,0.81
+1025,Classic Toned Milk,Dairy & Eggs,175.0,1,0.81
+1129,Green Basmati Rice 5kg,Packaged Staples,649.0,1,0.87
+1118,Gold Detergent Powder,Household,93.0,1,0.99
+1037,Royal Ghee,Dairy & Eggs,116.0,0,0.9
+1098,Prime Face Wash,Personal Care,599.0,1,0.86
+1121,Green Toilet Cleaner,Household,549.0,1,0.98
+1145,Pure Masala Pack,Packaged Staples,1144.0,1,0.82
+1036,Green Brown Eggs,Dairy & Eggs,58.0,1,0.77
+1012,Pure Potatoes,Fruits & Vegetables,192.0,1,0.67
+1106,Super Body Lotion,Personal Care,337.0,1,0.97
+1042,Prime Fresh Cream,Dairy & Eggs,235.0,1,0.76
+1110,Classic Hair Oil,Personal Care,577.0,1,0.93
+1079,Pure Namkeen Mix,Snacks,90.0,0,0.91
+1060,Fresh Orange Juice,Beverages,211.0,0,0.99
+1137,Super Sugar 1kg,Packaged Staples,532.0,1,0.9
+1130,Super Basmati Rice 5kg,Packaged Staples,379.0,1,0.87
+1035,Select Brown Eggs,Dairy & Eggs,297.0,1,0.86
+1067,Natural Mango Drink,Beverages,275.0,1,0.95
+1023,Pure Papaya,Fruits & Vegetables,87.0,1,0.7
+1109,Gold Hair Oil,Personal Care,413.0,0,0.99
+1020,Farm Capsicum,Fruits & Vegetables,103.0,1,0.7
+1059,Prime Orange Juice,Beverages,444.0,1,0.92
+1047,Farm Bun Pack,Bakery,102.0,1,0.77
+1133,Farm Toor Dal 1kg,Packaged Staples,586.0,1,0.99
+1126,Farm Mosquito Repellent,Household,376.0,0,0.9
+1063,Fresh Green Tea,Beverages,165.0,0,0.98
+1054,Royal Cake Slice,Bakery,49.0,1,0.84
+1002,Daily Bananas,Fruits & Vegetables,186.0,0,0.78
+1044,Super Brown Bread,Bakery,30.0,1,0.75
+1083,Pure Salted Peanuts,Snacks,265.0,1,0.9
+1065,Select Coffee Powder,Beverages,388.0,0,0.95
+1009,Royal Spinach,Fruits & Vegetables,169.0,1,0.77
+1048,Daily Bun Pack,Bakery,136.0,0,0.84
+1085,Super Popcorn,Snacks,200.0,1,0.98
+1055,Royal Multigrain Bread,Bakery,91.0,1,0.82
+1069,Pure Mineral Water,Beverages,313.0,1,0.91
+1045,Select White Bread,Bakery,114.0,1,0.86
+1139,Prime Salt 1kg,Packaged Staples,83.0,1,0.86
+1073,Select Lemon Iced Tea,Beverages,90.0,1,0.92
+1016,Gold Grapes,Fruits & Vegetables,179.0,1,0.78
+1077,Super Potato Chips,Snacks,54.0,0,0.98
+1088,Green Chocolate Bar,Snacks,240.0,1,0.96
+1039,Daily Buttermilk,Dairy & Eggs,182.0,0,0.85
+1099,Royal Toothpaste,Personal Care,338.0,1,0.99
+1146,Green Masala Pack,Packaged Staples,911.0,1,0.94
+1135,Fresh Sunflower Oil 1L,Packaged Staples,1063.0,0,0.85
+1032,Gold Butter,Dairy & Eggs,173.0,1,0.77
+1081,Super Choco Cookies,Snacks,37.0,1,0.89
+1107,Royal Deodorant,Personal Care,665.0,1,0.95
+1089,Select Wafers,Snacks,154.0,0,0.93
+1076,Choice Coconut Water,Beverages,312.0,1,0.92
+1010,Farm Spinach,Fruits & Vegetables,254.0,1,0.66
+1026,Gold Toned Milk,Dairy & Eggs,210.0,0,0.81
+1092,Gold Dry Fruit Pack,Snacks,327.0,0,0.96
+1051,Prime Rusk,Bakery,158.0,1,0.85
+1049,Natural Croissant,Bakery,59.0,1,0.73
+1087,Super Chocolate Bar,Snacks,341.0,1,0.99
+1074,Pure Lemon Iced Tea,Beverages,153.0,1,0.95
+1123,Fresh Air Freshener,Household,208.0,0,0.97
+1119,Everyday Garbage Bags,Household,172.0,1,0.92
+1004,Natural Tomatoes,Fruits & Vegetables,36.0,1,0.75
+1075,Select Coconut Water,Beverages,161.0,1,0.99
+1014,Green Carrots,Fruits & Vegetables,94.0,1,0.76
+1138,Royal Sugar 1kg,Packaged Staples,304.0,1,0.84
+1124,Select Air Freshener,Household,482.0,0,0.89
+1021,Classic Cucumber,Fruits & Vegetables,232.0,1,0.71
+1105,Choice Body Lotion,Personal Care,623.0,1,0.95
+1100,Select Toothpaste,Personal Care,548.0,0,0.98
+1134,Select Toor Dal 1kg,Packaged Staples,935.0,0,0.94
+1043,Everyday Brown Bread,Bakery,80.0,1,0.82
+1095,Classic Shampoo 340ml,Personal Care,746.0,0,0.92
+1066,Daily Coffee Powder,Beverages,203.0,0,0.94
+1120,Natural Garbage Bags,Household,475.0,1,0.88
+1056,Daily Multigrain Bread,Bakery,180.0,0,0.73
+1030,Everyday Paneer,Dairy & Eggs,214.0,1,0.74
+1122,Royal Toilet Cleaner,Household,672.0,1,0.97
+1033,Super Cheese Slices,Dairy & Eggs,282.0,1,0.78
+1062,Select Cola 750ml,Beverages,59.0,0,0.93
+1040,Green Buttermilk,Dairy & Eggs,74.0,1,0.85
+1006,Choice Onions,Fruits & Vegetables,31.0,0,0.81
+1052,Value Rusk,Bakery,30.0,0,0.8
+1064,Choice Green Tea,Beverages,255.0,1,0.95
+1008,Prime Apples,Fruits & Vegetables,51.0,1,0.84
+1011,Select Potatoes,Fruits & Vegetables,221.0,1,0.67
+1018,Select Lemons,Fruits & Vegetables,177.0,1,0.78
+1058,Green Pizza Base,Bakery,84.0,1,0.83
+1090,Royal Wafers,Snacks,305.0,0,0.93
